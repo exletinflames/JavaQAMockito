@@ -33,10 +33,7 @@ public class FilmManagerTest {
                 "test3", "test2", "test1"
         };
 
-        String[] expected = {"Test1", "Test2" , "Test3"};
-        String[] actual = filmManager.findLast();
-
-     Assertions.assertArrayEquals(expected , actual );
+        Assertions.assertArrayEquals(array, filmManager.findLast());
     }
 
     @Test
